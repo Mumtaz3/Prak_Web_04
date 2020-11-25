@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/chat/style.css">
+    <title>Aplikasi Chat</title>
+</head>
+<body>
+    <script>
+   function Kirim() {
+        let dialog = document.getElementById("pesan").value;
+        document.getElementById("isipesan").innerHTML += dialog+"<br/>";
+        document.getElementById("pesan").value="";
+        return false ;
+       }
+    </script>
+    <div id="isipesan"></div>
+    <form method="GET" onsubmit="return Kirim()" id="chat">
+    <br/>
+    <input type="text" id="pesan" name="message" size="30">
+    <button type="submit" onclick="Kirim();">Kirim</button>
+    </form>
+<br><br/>
+</body>
+</html>

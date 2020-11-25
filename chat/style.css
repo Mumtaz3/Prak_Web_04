@@ -1,0 +1,11 @@
+body{
+    background-color: cyan ;
+    text-align: justify;
+}
+input[type=text]{
+width: auto;
+height: auto;
+}
+#isipesan{
+    width: 100%;
+}
