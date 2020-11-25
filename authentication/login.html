@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="Id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body>
+      <style>
+          body{
+            background-color:lightblue;
+          }
+          input[type=text], input[type=password] {
+          width: 10%;
+          padding: 5px 10px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          }
+          button{
+                color: #808080;
+          }
+      </style>
+      <div id="Username">
+      <form name="Login">
+              <label for="namapengguna">Username</label>
+         <br/>
+              <input type="text" placeholder="namapengguna" id="namapengguna" name="user" required>
+        <br/>
+              <label for="Password">Password</label>
+         <br/>
+              <input type="password" placeholder="masukkanpassword" name="sandi" id="Password" required>
+        <br/>
+              <button type="submit" onclick="check(this.form)">Submit</button>
+        </div>
+      </form>
+      <script src="/authentication/otentikasi.js"></script>
+</body>
+</html>

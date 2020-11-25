@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+    <script>
+    function konversi(){
+      let z = document.getElementById("kurs").value;
+
+      if (z==0){
+          input= document.getElementById("masukkan").value;
+          nilai= 9915;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }
+      else if(z==1){
+          input= document.getElementById("masukkan").value;
+          nilai= 13472;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }
+      else if(z==2){
+        input= document.getElementById("masukkan").value;
+          nilai= 974;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }
+      else if(z==3){
+          input= document.getElementById("masukkan").value;
+          nilai= 120;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }
+      else if(z==4){
+          input= document.getElementById("masukkan").value;
+          nilai= 15888;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }
+      else if(z==5){
+          input= document.getElementById("masukkan").value;
+          nilai= 3952;
+          hitung= nilai*input
+          document.getElementById("hasil").value= hitung; 
+      }   
+    }
+    </script>
+</head>
+<body>
+    <style>
+    body{
+        background-color: aliceblue;
+    }
+    input[type=number]{
+    width: auto;
+    }
+    select{
+        width: 70px;
+    }
+    table,td {
+    border: 1px solid black;
+    width: 32%;
+    height: 90%;
+}
+    </style>
+    <form action="">
+    <div id="masukkannilai">
+        <table>
+            <td>Masukkan Nilai</td>
+            <td>Valas</td>
+            <td>Nilai Rupiah</td>
+        </table>
+        <input type="number" id="masukkan" onkeyup="konversi()">
+        <select id="kurs" onchange="konversi()">
+            <option value="0">Dollar USD</option>
+            <option value="1">Dollar Singapore</option>
+            <option value="2">Ringgit</option>
+            <option value="3">Yen</option>
+            <option value="4">Euro</option>
+            <option value="5">Riyal</option>
+        </select>
+        <input type="number" id="hasil" placeholder="nilairupiah">
+    </form>
+    </div>
+</body>
+</html>

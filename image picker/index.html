@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pilih gambar</title>
+    <script>
+        function select(){
+            let list_gambar =document.getElementById("gambar");
+            let idx=list_gambar.selectedIndex;
+            console.log("gambar index ke - "+ idx+ "adalah" + list_gambar[idx].value);
+            let area_foto=document.getElementById("img");
+            area_foto.src="http://localhost/image%20picker/gambar/"+list_gambar[idx].value+".jpg";
+            alert("ini gambar alat elektronik")
+        }
+    </script>
+</head>
+<body>
+    <form id="frm">
+        Pilih Foto: <select id="gambar" onchange="select()">
+        <option value="komputer">komputer</option>
+        <option value="laptop">laptop</option>
+        <option value="hp">hp</option>
+        <option value="printer">printer</option>
+    </select>
+    </form>
+   <br><br/>
+   <img src="http://localhost/image%20picker/gambar/komputer.jpg" alt="ini gambar komputer" id="img">
+</body>
+</html>
